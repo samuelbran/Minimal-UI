@@ -1,0 +1,25 @@
+//Colors
+$primary: #15A2FE;
+
+$main-transition: all ease-in .2s;
+
+// Breakpoints
+$desktop: 1024px;
+$widescreen: 1216px;
+
+// Buttons
+$button-padding-horizontal: 20px;
+$button-padding-vertical: 14px;
+$button-border-color: #f2f2f2;
+
+// Inputs
+$input-shadow: none;
+$input-border-color: #EAEBEC;
+$input-hover-color: darken($input-border-color, 5%);
+$input-focus-border-color: $primary;
+$label-color: #B6BBC1;
+$label-weight: normal;
+
+// Typography
+$paragraph-font-size: 14px;
+$family-sans-serif: "Inter UI", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;

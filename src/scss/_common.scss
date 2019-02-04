@@ -1,0 +1,40 @@
+.admin-bar {
+  .navbar {
+    &.is-fixed-top {
+      top: 46px;
+    }
+  }
+}
+
+.button, .input,
+.textarea, .select select, .file-cta,
+.file-name, .pagination-previous,
+.pagination-next,
+.pagination-link,
+.pagination-ellipsis {
+  height: auto;
+  padding: $button-padding-vertical $button-padding-horizontal;
+}
+
+aside {
+  & > ul {
+    & > li {
+      margin: 0.75rem 0 1.25rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    ul {
+      padding-left: 10px;
+    }
+
+    li {
+      h2 {
+        @extend .title;
+        @extend .is-5;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed;
+  }
+}
+
+@media (min-width: 783px) {
+  .admin-bar {
+    .navbar {
+      &.is-fixed-top {
+        top: 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .navbar-logo {
+    position: static;
+    background: $dark;
+    width: initial;
+  }
+
+  .navbar-menu {
+    background: none;
+    padding: 0;
+    position: static;
+    width: initial;
+    height: initial;
+    transform: none;
+
+    .menu-item {
+      &:hover {
+        background: darken($dark, 2%);
+
+        .sub-menu {
+          display: block;
+        }
+      }
+    }
+
+    .sub-menu {
+      display: none;
+      padding: 0;
+      background: darken($dark, 2%);
+      position: absolute;
+    }
+  }
+
+  .menu-item-has-children {
+    &::after {
+      content: '';
+    }
+  }
+}
