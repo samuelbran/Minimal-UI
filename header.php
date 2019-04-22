@@ -42,25 +42,23 @@
             <img src="<?php assets_path('img/logo_white.svg')?>" alt="logo">
           </a>
 
-          <?php if ( has_nav_menu( 'main-menu' ) ) { ?>
-            <span class="navbar-burger burger nav-trigger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
+          <span class="navbar-burger burger nav-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
 
-            <div class="navbar-menu">
-              <?php
-                wp_nav_menu(
-                  array (
-                    'theme_location' => 'main-menu',
-                    'container' => null,
-                    'items_wrap' => '<div class="navbar-start">%3$s</div>'
-                  )
-                );
-              ?>
-            </div>
-          <?php } ?>
+        <div class="navbar-menu">
+          <?php
+            wp_nav_menu(
+              array (
+                'theme_location' => 'main-menu',
+                'container' => null,
+                'items_wrap' => '<div class="navbar-start">%3$s</div>'
+              )
+            );
+          ?>
         </div>
       </div>
     </nav>
