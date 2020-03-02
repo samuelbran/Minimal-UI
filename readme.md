@@ -10,7 +10,7 @@
 
 ### For development
 
-- Run `npm i` to install dependencies.
-- For development mode use `npm run dev`, for production ready code run `npm run build`.
+- Run `yarn` to install dependencies.
+- For development mode use `yarn dev`, for production ready code run `yarn build`.
 
 This is an Open Source project, **PRs are open.**
